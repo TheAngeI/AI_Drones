@@ -26,7 +26,7 @@ The firefighters would use this when there is a big fire, or if the vision is li
 * Thermal imaging data: being able to collect and analyze data through smoke.
 * Using current weather data and applying it to how the current fire situation is developing.
 
-* To have the drones fly in an effective and optimal path we would be using reinforcement learning to guide drones thorugh the complext environments and avoid crashing.
+* To have the drones fly in an effective and optimal path we would be using reinforcement learning to guide drones through the complex environments and avoid crashing.
 * To have the drones be able to detect/recognize what is happening we would have the AI trained to recognize heat signatures of victims/fire sources/gas leaks/etc.
      * Additionally we it would perhaps be possible to train the AI to recognize most likely hiding spots where victims are trying to survive.
 * To have the drones be able to predict the fire development we would be using the wind speed/humidity/geography(is the fire in the woods/beach/hills/etc).
