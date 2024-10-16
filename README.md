@@ -1,75 +1,45 @@
-# Project Title
+# Firefighting AI drones
 
 Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+The idea is to have AI powered drones assist firefighters during emergencies. By equipping the drones with thermal imaging, the drones should navigate fire zones, detect heat sources, spot potential hazards(gas leaks etc.), follow and predict fire spread. The goal is to help firefighters during crucial high stress situations.
 
 
 ## Background
 
 Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
-
+* I am currently studying to become a fire engineer and I am very interested in how AI can help in my field. I also want to examine how/if we can advance the current technology used.
+* Providing the firefighters with real-time data is critical in dynamic fire situation where the conditions change rapidly.
+* 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+The firefighters would use this when there is a big fire, or if the vision is limited, if there is a fire in a tall building, if its a wildfire that is quickly spreading. By getting additional information on the evolution of the fire the firefighters will be able to make a more informed decision. 
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+* Thermal imaging data: being able to collect and analyze data through smoke.
+* Using current weather data and applying it to how the current fire situation is developing.
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
+* To have the drones fly in an effective and optimal path we would be using reinforcement learning to guide drones thorugh the complext environments and avoid crashing.
+* To have the drones be able to detect/recognize what is happening we would have the AI trained to recognize heat signatures of victims/fire sources/gas leaks/etc.
+     * Additionally we it would perhaps be possible to train the AI to recognize most likely hiding spots where victims are trying to survive.
+* To have the drones be able to predict the fire development we would be using the wind speed/humidity/geography(is the fire in the woods/beach/hills/etc).
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+* One challenge could be battery life of the drone. The situations where the drones would be useful would also be situations where the fire responses lasts several hours and could provide a issue with the battery time of the drones. However if they could work with either the drone simply being a drone that collects data and all the calculations are done in homebase, this way you could swap two drones in and out without them starting from zero.
+* Depending on weather conditions/environment it could be difficult to use a drone. If there is heavy winds/rain/etc. or if there is a situation in a dense urban area.
+* However the biggest challenge would probably be training AI on fire detection/prediction.  
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+Maybe you could develop some kind of AR glasses that the firefighters would wear that would provide real time mapping. However I havent thought about that one as much.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
